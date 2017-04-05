@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+This snippet will convert the ssid into a HEX string
+*/
+
 char *ssid = "this is a long ssid";
 char query[255];
 
