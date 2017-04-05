@@ -8,7 +8,7 @@ char data[255];
 
 void change_data(char *str[]) {
   // set original data variable to some other string
-  sprintf(*str, "some new data\n");
+  sprintf(*str, "This is the changed string\n");
 }
 
 int main(void) {
