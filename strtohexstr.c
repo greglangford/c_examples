@@ -5,7 +5,7 @@ This snippet will convert an ascii string to hex encoded string
 */
 
 char *ascii_string = "github.com/greglangford";
-char query[255];
+char result[255];
 
 /*
 strtohexstr: pass string as first arg and pointer to char array to store result as second arg
@@ -30,10 +30,10 @@ void strtohexstr(char str[], char *hexstr[]) {
 }
 
 int main(void) {
-  // create pointer to query
-  char *ptrquery = query;
+  // create pointer to result
+  char *ptrresult = result;
 
   printf("Original String: %s\n", ascii_string);
-  strtohexstr(ascii_string, &ptrquery);
-  printf("Hex Encoded String: %s\n", query);
+  strtohexstr(ascii_string, &ptrresult);
+  printf("Hex Encoded String: %s\n", result);
 }
