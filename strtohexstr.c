@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /*
-This snippet will convert the ssid into a HEX string
+This snippet will convert an ascii string to hex encoded string
 */
 
-char *ssid = "github.com/greglangford";
+char *ascii_string = "github.com/greglangford";
 char query[255];
 
 /*
-strtohexstr: pass string as first arg and pointer to char array as second arg
+strtohexstr: pass string as first arg and pointer to char array to store result as second arg
 hex encoded string will be writted to the pointer hexstr
 */
 void strtohexstr(char str[], char *hexstr[]) {
@@ -33,7 +33,7 @@ int main(void) {
   // create pointer to query
   char *ptrquery = query;
 
-  printf("Original String: %s\n", ssid);
-  strtohexstr(ssid, &ptrquery);
+  printf("Original String: %s\n", ascii_string);
+  strtohexstr(ascii_string, &ptrquery);
   printf("Hex Encoded String: %s\n", query);
 }
